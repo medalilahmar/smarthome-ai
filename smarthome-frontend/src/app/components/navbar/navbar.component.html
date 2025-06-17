@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-logo" routerLink="/">🏠 SmartHome AI</a>
+    <button class="hamburger" (click)="toggleMenu()" [ngClass]="{ 'is-open': isMenuOpen }">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" [ngClass]="{ 'is-open': isMenuOpen }">
+      <li><a routerLink="/" (click)="closeMenu()">Accueil</a></li>
+      <li><a routerLink="/dashboard" (click)="closeMenu()">Tableau de Bord</a></li>
+      <li><a routerLink="/settings" (click)="closeMenu()">Paramètres</a></li>
+      <li>
+        <button class="nav-button">Connexion</button>
+      </li>
+    </ul>
+  </div>
+</nav>
