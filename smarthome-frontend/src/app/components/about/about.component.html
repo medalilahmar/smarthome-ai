@@ -1,0 +1,81 @@
+<section class="about-hero" data-aos="fade-up">
+  <div class="container">
+    <h1 class="about-title">Notre Vision</h1>
+    <p class="about-subtitle">Révolutionner la façon dont vous interagissez avec votre maison</p>
+  </div>
+</section>
+
+<section class="about-mission" data-aos="fade-up" data-aos-delay="200">
+  <div class="container">
+    <div class="mission-grid">
+      <div class="mission-content">
+        <h2>La puissance de l'IA au service de votre quotidien</h2>
+        <p>SmartHome AI est né de la volonté de créer une solution complète qui anticipe vos besoins plutôt que de simplement répondre à vos commandes.</p>
+        <p>Notre plateforme combine les dernières avancées en intelligence artificielle, réalité virtuelle et domotique pour offrir une expérience unique.</p>
+        <div class="mission-stats">
+          <div class="stat-item">
+            <div class="stat-number">1M+</div>
+            <div class="stat-label">Utilisateurs</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Appareils compatibles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support</div>
+          </div>
+        </div>
+      </div>
+      <div class="mission-image" data-aos="zoom-in" data-aos-delay="300">
+        <div class="ai-illustration">
+          <div class="ai-core">🧠</div>
+          <div class="ai-wave"></div>
+          <div class="ai-wave delay-1"></div>
+          <div class="ai-wave delay-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-timeline">
+  <div class="container">
+    <h2 data-aos="fade-up">Notre Histoire</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let milestone of milestones; let i = index" 
+           data-aos="fade-up" [attr.data-aos-delay]="100 * i">
+        <div class="timeline-year">{{milestone.year}}</div>
+        <div class="timeline-content">
+          <div class="timeline-circle"></div>
+          <div class="timeline-event">{{milestone.event}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-team">
+  <div class="container">
+    <h2 data-aos="fade-up">Rencontrez notre équipe</h2>
+    <p class="team-subtitle" data-aos="fade-up" data-aos-delay="100">Des passionnés d'innovation au service de votre confort</p>
+    
+    <div class="team-grid">
+      <div class="team-card" *ngFor="let member of teamMembers; let i = index"
+           data-aos="flip-left" [attr.data-aos-delay]="200 + (i * 100)">
+        <div class="team-avatar">{{member.avatar}}</div>
+        <h3 class="team-name">{{member.name}}</h3>
+        <p class="team-role">{{member.role}}</p>
+        <p class="team-bio">{{member.bio}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-cta" data-aos="fade-up">
+  <div class="container">
+    <h2>Prêt à vivre l'expérience SmartHome AI ?</h2>
+    <p>Rejoignez la révolution de la maison intelligente dès aujourd'hui</p>
+    <a routerLink="/register" class="cta-button">Commencer maintenant</a>
+  </div>
+</section>

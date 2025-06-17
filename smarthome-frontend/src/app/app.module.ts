@@ -7,7 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgClass } from '@angular/common';
-   import { CommonModule } from '@angular/common'; 
+   import { CommonModule } from '@angular/common';
+import { AboutComponent } from './components/about/about.component'; 
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NgClass } from '@angular/common';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
