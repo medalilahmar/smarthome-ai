@@ -18,11 +18,11 @@ export class AboutComponent implements OnInit{
   ];
 
   milestones = [
-    { year: '2020', event: 'Idée initiale et premier prototype' },
-    { year: '2021', event: 'Première levée de fonds' },
-    { year: '2022', event: 'Lancement de la version bêta' },
-    { year: '2023', event: 'Prix de l\'innovation technologique' },
-    { year: '2024', event: '1 million d\'utilisateurs' }
+    { year: '2025', event: 'Idée initiale et premier prototype' },
+    { year: '2026', event: 'Première levée de fonds' },
+    { year: '2027', event: 'Lancement de la version bêta' },
+    { year: '2027', event: 'Prix de l\'innovation technologique' },
+    { year: '2028', event: '1 million d\'utilisateurs' }
   ];
 
   ngOnInit() {
